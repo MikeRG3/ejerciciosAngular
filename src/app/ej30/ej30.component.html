@@ -1,0 +1,9 @@
+<p>
+    30.- El anterior pero en un compenente a la derecha aparece una lista de ocurrencias que se han ido buscando.Lo que se ha estado introduciendo anteriormente.Aparece en color verde si la ocurrencia ha sido encontrada y en rojo si no.
+</p>
+
+<div class="border">
+    <ul>
+        <li *ngFor="let ocu of getOcurrencias(); let i = index"> <span [ngStyle]="{'background': encontrar(ocu)[i]}">{{ocu}} </span></li>
+    </ul>
+</div>

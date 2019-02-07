@@ -1,0 +1,13 @@
+<p>
+    29.- Array con cadenas y numeros. Tenemos una caja de texto que introducimos cualquier cosa. Nos dice si la palabra existe y en que posicion. La caja de texto se envia de padre al hijo.
+</p>
+
+<div class="form-group">
+    <label for="">Introduce palabra o numero a buscar en el array</label>
+    <input [(ngModel)]="caja" type="text" class="form-control" name="" id="" (keydown.enter)="enviar()">
+    <button type="button" name="" id="ej30" class="btn btn-primary" (click)="enviar()">Enviar</button>
+</div>
+
+<app-ej29hijo [valor]="ocurrencia"></app-ej29hijo>
+
+<app-ej30 [ocurrencia]="ocurrencia"></app-ej30>
